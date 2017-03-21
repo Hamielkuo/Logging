@@ -701,9 +701,7 @@ namespace Microsoft.Extensions.Logging.Test
 
             var loggerFactory = new LoggerFactory();
 
-#pragma warning disable CS0612 // Type or member is obsolete
             loggerFactory.AddConsole(settings);
-#pragma warning restore CS0612 // Type or member is obsolete
 
             var logger = loggerFactory.CreateLogger("Test");
             Assert.False(logger.IsEnabled(LogLevel.Trace));
@@ -735,9 +733,7 @@ namespace Microsoft.Extensions.Logging.Test
 
             var loggerFactory = new LoggerFactory();
 
-#pragma warning disable CS0612 // Type or member is obsolete
             loggerFactory.AddConsole(settings);
-#pragma warning restore CS0612 // Type or member is obsolete
 
             var logger = loggerFactory.CreateLogger("Test");
             Assert.False(logger.IsEnabled(LogLevel.Trace));
@@ -771,9 +767,7 @@ namespace Microsoft.Extensions.Logging.Test
 
             var loggerFactory = new LoggerFactory();
 
-#pragma warning disable CS0612 // Type or member is obsolete
             loggerFactory.AddConsole(settings);
-#pragma warning restore CS0612 // Type or member is obsolete
 
             loggerFactory.AddDebug();
 
